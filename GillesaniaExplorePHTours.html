@@ -9,6 +9,9 @@
     </head>
 
     <style>
+       body{
+        font-family:'Montserrat', sans-serif;
+       }
         header{
             background-color: #c5ddff;
             text-align: center;
@@ -19,12 +22,40 @@
             margin:0 auto;
         }
         .company-logo{
-            width:50px;
+            width:100px;
             height:auto;
         }
         .company-banner{
             max-width:100%
         }
+        main section{
+            background-color: #c5ddff;
+            padding:20px;
+            margin-top:20px;
+        }
+        hr{
+            border:1px solid #000000;
+            margin:20px 0;
+        }
+        h2{
+            margin-bottom:15px;
+        }
+        ul{
+            list-style:none;
+            padding:0;
+        }
+        li{
+            margin-bottom:10px;
+        }
+        .cta{
+            color: #fff;
+            background-color:#333;
+            padding:15px 30px;
+            text-decoration:none;
+            display:inline-block;
+            border-radius:5px;
+        }
+
     </style>
 
     <body>
@@ -32,5 +63,49 @@
             <img src="images/companylogo.png" alt="Company Logo" class="company-logo">
             <img src="images/companybanner.png" alt="Company Banner" class="company-banner">
         </header>
+
+        <main>
+            <section> 
+                <h2>Servicess Offered</h2>
+
+                <ul>
+                    <li>Island Hopping Tours</li>
+                    <li>Guided City Tours</li>
+                    <li>Mountain Trekking Packages</li>
+                    <li>Hotel and Transport Reservations</li>
+                    <li>Customized Travel Itineraries</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Promotions</h2>
+
+                <ul>
+                    <li>3+1 Free" group packages</li>
+                    <li>20% discount on bookings made at least a month in advance</li>
+                    <li>Special weekend rates for island hopping in Cebu</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2>Popular Packages</h2>
+                <ul>
+                    <li>Manila: Historic Intramuros Tour with Food Crawl</li>
+                    <li>Cebu: Whale Shark Watching and Kawasan Falls Adventure</li>
+                    <li>Davao: Mt. Apo Climbing Experience</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section>
+                <p style="text-align: center;"><a href="#" class="cta">Book your adventure with us today! Limited slots available for promo packages.</a></p>
+            </section>
+
+        </main>
     </body>
 </html>
