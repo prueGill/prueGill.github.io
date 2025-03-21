@@ -4,12 +4,16 @@ body {
     padding: 0;
     background-color: #1e1e1e;
     color: #f5f5f5;
+    line-height: 1.6;
 }
 
 nav {
     background-color: #333;
     padding: 1rem;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -40,6 +44,7 @@ header {
     justify-content: center;
     padding: 3rem 0;
     background: linear-gradient(145deg, #333, #555);
+    text-align: center;
 }
 
 header img {
@@ -52,6 +57,13 @@ header img {
 header h1 {
     font-size: 2.5rem;
     color: #ff4081;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    margin: 0.5rem 0 0;
 }
 
 section {
@@ -59,13 +71,47 @@ section {
     text-align: center;
 }
 
-.skills ul {
-    list-style: none;
-    padding: 0;
+.skills {
+    margin-top: 2rem;
 }
 
-.skills li {
-    margin: 0.5rem 0;
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #ff4081;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project-item a:hover {
+    color: #f5f5f5;
 }
 
 footer {
@@ -75,13 +121,19 @@ footer {
     margin-top: 2rem;
 }
 
-footer a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #f5f5f5;
-    font-weight: 500;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-footer a:hover {
+.social-icons a {
+    color: #f5f5f5;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
     color: #ff4081;
 }
